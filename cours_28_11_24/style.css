@@ -1,0 +1,93 @@
+/* *{
+
+} */
+
+
+body {
+ height: 200vh;
+
+}
+
+
+p,.s2 {
+    color: blue;
+}
+/* .s2 {
+    color: blue;
+} */
+
+
+
+.p1 {
+    color: red;
+}
+#sous_titre1 {
+    color: pink;
+}
+/* ici on cible la balise span */
+span {
+    color: orange;
+}
+/*  ici on cible la class s2 */
+/*  ici on cible la class s3 */
+.s3 {
+    color: chartreuse;
+}
+.st {
+    background-color: green;
+}
+
+/* ______________________________________ */
+
+h4 em {
+    color: blue;
+}
+h4 + p {
+    background-color: teal;
+}
+.paragraphe {
+    font-size: 2rem;
+}
+
+/* _____[Ajout d'un font family]___________________________________ */
+@font-face {
+    font-family: Sevillana;
+    src: url(./fonts/Sevillana-Regular.ttf);
+}
+.paragraphe {
+    font-family: Sevillana;
+}
+.float_image {
+    float: left;
+}
+/* section {
+color: white;
+background-image: url(./assets/images/plage.jpeg);
+background-repeat:  no-repeat;
+background-size: cover;
+} */
+section {
+    background: url(./assets/images/plage.jpeg) no-repeat ;
+    background-size: cover;
+    height: 200px;
+    overflow-y: scroll;
+    /* scrollbar-width: thin; */
+scrollbar-color: yellow blue;
+}
+.container {
+    width: 100px;
+    height: 100px;
+border: 2px solid black;
+/* border-top: 30px solid teal */
+/* border-radius: 50%; */
+border-radius: 10px 70px 10px 70px;
+/* background-color: yellow; */
+background-image: url(./assets/images/citron.jpeg);
+box-shadow: 20px 0px 20px black;
+}
+
+
+.BP {
+    border-radius: 50%;
+    border: 10px solid rgb(53, 234, 17);
+}
