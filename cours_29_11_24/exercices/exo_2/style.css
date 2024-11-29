@@ -1,0 +1,21 @@
+/* css header____________________________ */
+header{
+    text-align: center;
+    color: red;
+}
+header h1 {
+    color: red;
+    font-size: 3em;
+}
+
+/* css liste ol_____________________ */
+
+
+ol {
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 10px 5px 3px blue ;
+}
+li a:hover {
+font-weight: bold;
+}
