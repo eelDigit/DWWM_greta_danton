@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="page2.css">
+    <title>Page 2</title>
+</head>
+
+<body>
+    <h1>Page 2</h1>
+    <h2>Tableaux</h2>
+
+
+
+    <table>
+        <caption>MENU</caption>
+        <thead>
+            <tr>
+                <th> Entrée </th>
+                <th> Plats </th>
+                <th> Dessert </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="3">Carottes</td>
+                <!-- <td>Gateau</td>
+                <td>Soupe</td> -->
+            </tr>
+            <tr>
+                <td>Betraves</td>
+                <td>frites</td>
+                <td rowspan="2">flan</td>
+            </tr>
+            <tr>
+                <td colspan="2">Betraves</td>
+                <!-- <td>frites</td> -->
+                <!-- <td>flan</td> -->
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>FIN</td>
+                <td>FIN</td>
+                <td>FIN</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h2>Formulaires</h2>
+    <form action="fichier.php">
+
+        <label for="nom">Nom</label>
+        <input type="text" id="nom">
+
+        <label for="prenom">Prénom</label>
+        <input placeholder="prenom" type="text" id="prenom">
+
+        <label for="">Age</label>
+        <input placeholder="0" type="number">
+
+        <label for="email">Email</label>
+        <input type="email" name="" id="email">
+
+        <input type="date" name="" id="">
+        <input type="color" name="" id="">
+
+        <input type="datetime-local" name="" id="">
+        <input type="file" name="" id="">
+        <input type="password" name="" id="">
+        <input type="hidden" name="">
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+
+    </form>
+
+
+
+</body>
+
+</html>

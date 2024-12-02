@@ -1,0 +1,19 @@
+body {
+    height: 250vh;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+
+th,td{
+    border: 2px solid black;
+    
+    padding: 20px;
+    /* height: 100px; */
+}
+/* pour mettre le titre du tableau en bas (caption)______ */
+caption {
+    caption-side: bottom;
+}

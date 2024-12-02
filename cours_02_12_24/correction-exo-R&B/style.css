@@ -1,0 +1,94 @@
+body {
+    color: white;
+    padding: 0;
+    margin: 0;
+    background:  linear-gradient(to bottom, #0f0c29, #302b63), #24243e;
+}
+
+/* cssheader _________________________________ */
+header {
+    background-color: #1e1e2f;
+    text-align: center;
+    border-bottom:  4px solid #ff007f;
+}
+header h1 {
+    color: #ff007f;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3em;
+    margin: 0;
+}
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+
+/* css main_____________________ */
+
+main {
+ text-align: center;
+ padding: 20px;
+}
+img {
+    border-radius: 20px;
+}
+.artiste, .info p{
+    background:  rgba(255,255,255,0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px ;
+    max-width: 300px; /* enleve le centrage de text-align  */
+}
+.programme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+ .programme h2, .info h2 {
+    color: #ff007f;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+ }
+
+.artiste {
+    width: 250px;
+}
+
+.artiste h3 {
+    color: #fffb7d;
+    font-size: 1.8em;
+    margin: 0;
+}
+.artiste p {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #ddd;
+}
+
+/* css hover ______________________ */
+.artiste:hover {
+    box-shadow: 3px 3px 10px black;
+}
+.info p:hover {
+    box-shadow: 3px 3px 10px black;
+
+}
+
+/* css  footer ____________________ */
+footer {
+    background:  #1e1e2f;
+    text-align: center;
+    padding: 18px;
+    border-top: 4px solid #ff007f;
+    color: #ccc;
+    font-size: 0.9em;
+
+}
+
+
+
+
+
