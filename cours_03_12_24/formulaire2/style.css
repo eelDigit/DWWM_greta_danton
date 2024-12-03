@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+.form_container {
+    display: block;
+    margin: auto;
+    background-color: black;
+    width: 450px;
+    color: yellow;
+    padding: 20px 30px;
+    border-radius: 10px;
+
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+input, textarea{
+    color: white;
+    background-color: black;
+    border-style: hidden;
+    border-bottom: 2px solid yellow;
+    padding-bottom: 3px;
+    margin-bottom: 2px;
+}
+textarea {
+font-size: small;
+width: 100%;
+resize: vertical;
+max-width: 447px;
+}
+.button_envoyer, h1{
+text-align: center;
+}
+button {
+    width: 100%;
+    background-color: yellow;
+    border-style: none;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./cours.css">
+    <title>cours 03/12/24</title>
+
+</head>
+
+<body>
+    <input type="range" name="" id="">
+    <input type="search" name="" id="">
+
+    <input type="checkbox" name="" id="">
+
+
+    <form action="">
+
+
+        <p> Veuiilez cocher les aliments que vous aimez manger:
+            <br>
+            <input type="checkbox" name="frites" id="frites" checked>
+            <label for="frites">frites </label>
+
+            <input type="checkbox" name="steak" id="steak">
+            <label for="steak">steak</label>
+
+            <input type="checkbox" name="epinard" id="epinard">
+            <label for="epinard">Epinard</label>
+
+            <input type="checkbox" name="huitre" id="huitre">
+            <label for="huitre">Huitre</label>
+        </p>
+    </form>
+
+    <!-- input type radio -->
+    <form action="">
+        <fieldset>
+            <legend>Formulaire</legend>
+            <p>
+                Veuillez cocher votre tranche d'age :
+                <br>
+                <input type="radio" name="age" id="moins15">
+                <label for="moins15"> Moins de 15 ans </label> <br>
+
+                <input type="radio" name="age" id="medium15_25">
+                <label for="medium15_25"> 15 - 25 ans</label> <br>
+
+                <input type="radio" name="age" id="medium25_40">
+                <label for="medium25_40"> 25 - 40 ans </label> <br>
+
+                <input type="radio" name="age" id="plus40">
+                <label for="plus40"> Plus 40 ans </label>
+            </p>
+        </fieldset>
+        <p>
+            Sur quel continent habitez-vous ?
+            <br>
+            <input type="radio" name="continent" id="" checked>
+            <label for=""> Europe</label><br>
+
+            <input type="radio" name="continent" id="">
+            <label for=""> Afrique</label><br>
+
+            <input type="radio" name="continent" id="">
+            <label for=""> Amerique</label><br>
+
+            <input type="radio" name="continent" id="">
+            <label for=""> Asie</label><br>
+
+            <input type="radio" name="" id="">
+            <label for=""> Oceanie</label><br>
+        </p>
+    </form>
+
+    <!-- liste déroulantes -->
+    <form class="form_container" action="">
+        <p>
+            <label for="">Dans quel pays habitez vous ? </label>
+            <br>
+            <select name="" id="">
+                <!-- <option>Dans quel pays habitez vous ? </option> -->
+                <optgroup label="Europe">
+                    <option value="france"> France</option>
+                    <option value="espagne"> Espagne</option>
+                    <option value="italie"> Italie</option>
+                    <option value="allemagne"> Allemagne</option>
+                </optgroup>
+                <optgroup label="Asie">
+                    <option value="Japon"> Japon</option>
+                    <option value="Chine"> Chine</option>
+                </optgroup>
+            </select>
+        </p>
+    </form>
+
+    <!--  Ajout d'un audio -->
+
+    <audio src="./assets/audios/Spider-Man.mp3" controls></audio>
+
+    <audio controls>
+        <source src="./assets/audios/son.mp3">
+        <source src="./assets/audios/son.ogg">
+    </audio>
+
+
+</body>
+
+</html>

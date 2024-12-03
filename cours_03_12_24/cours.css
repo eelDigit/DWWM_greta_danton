@@ -1,0 +1,31 @@
+select {
+    background-color: rgb(31, 104, 240);
+color: yellow;
+padding: 10px;
+border-radius: 10px;
+width: 500px;
+
+}
+optgroup {
+    color: red;
+}
+option {
+    color: white;
+}
+.form_container{
+    background-color: rgb(236, 18, 18);
+    color: yellow;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    height: 200px;
+}
+legend {
+    color: red
+    
+}
+fieldset {
+    border-color: lightgray;
+    border-radius: 10px;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+}

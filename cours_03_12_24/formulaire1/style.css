@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    height: 100vh;
+    /* ___Centre le formulaire _____________ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+input, textarea{
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: lightgray;
+}
+
+button {
+    background: linear-gradient(120deg, #f6d365, #fda085);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: lightgray;
+    
+    /* display: block;
+    margin: auto; */
+}
+.form_container {
+    width: 400px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+.button_container, h1 {
+    text-align: center;
+}
