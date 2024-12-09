@@ -1,0 +1,49 @@
+body {
+    color: blue;
+}
+h1 {
+    text-align: center;
+}
+video {
+    border-radius: 20px;
+    border: 10px solid green;
+}
+.responsive {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-color: red;
+
+}
+/* responsive  screen and (max-device-width : 768px) ________________*/
+/* @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .responsive {
+    display: none;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    
+} */
+
+/* responsive @media screen and (max-device-width : 1280px) */
+/* @media only screen and (max-device-width : 520px)  {
+
+    .responsive {
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        background-color: rgb(208, 44, 175);
+
+    }
+
+} */
+
+
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+
+
+
+}

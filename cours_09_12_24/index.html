@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link  ./bootstrap.css en premier  -->
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>cours bootstrap 09/12/24</title>
+</head>
+
+<body>
+    <h1> Cours Bootstrap</h1>
+
+    <!-- ajout scrollspy  -->
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-4">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                    <nav class="nav nav-pills flex-column">
+                        <a class="nav-link" href="#item-1">Item 1</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-1-1">Item 1-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-1-2">Item 1-2</a>
+                        </nav>
+                        <a class="nav-link" href="#item-2">Item 2</a>
+                        <a class="nav-link" href="#item-3">Item 3</a>
+                        <nav class="nav nav-pills flex-column">
+                            <a class="nav-link ms-3 my-1" href="#item-3-1">Item 3-1</a>
+                            <a class="nav-link ms-3 my-1" href="#item-3-2">Item 3-2</a>
+                        </nav>
+                    </nav>
+                </nav>
+            </div>
+
+            <div class="col-8">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                    class="scrollspy-example-2" style="height: 400px; overflow-y: scroll;" tabindex="0">
+                    <div id="item-1">
+                        <h4>Item 1</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio quis quia, at obcaecati, nobis
+                            harum exercitationem voluptate maxime inventore, quaerat repudiandae? Corrupti veritatis
+                            laudantium voluptatibus debitis est rerum quisquam magnam id saepe recusandae ducimus
+                            tenetur perspiciatis facilis ipsa, incidunt fugit, eius explicabo ea! Nisi enim excepturi
+                            assumenda repellendus tenetur? Odio reiciendis repellat, maxime amet reprehenderit officiis.
+                            Dolores neque quo, mollitia suscipit corrupti dolore nulla accusamus reprehenderit officia
+                            vitae facere cumque? Mollitia id fuga eaque at. Exercitationem quia tenetur provident natus!
+                            Placeat aliquam sed quibusdam, vitae quasi optio. Deleniti odit sapiente aspernatur amet vel
+                            ipsa officiis possimus unde! Adipisci magni assumenda ducimus voluptatum error sit laborum
+                            neque minus officia mollitia. Mollitia eum sapiente neque labore voluptate, praesentium
+                            provident ipsam sed laudantium accusantium suscipit a quos ea excepturi sint porro facilis
+                            quisquam harum amet. Cumque voluptatem eaque debitis, explicabo corporis nostrum nihil
+                            laboriosam distinctio molestias atque ab reiciendis necessitatibus. Ab a unde animi facilis
+                            voluptatibus nam minus veritatis ipsum tenetur deleniti consequuntur impedit velit incidunt
+                            porro atque, provident dignissimos reiciendis eos modi non sit optio? Tempore vero impedit
+                            pariatur asperiores fugit eligendi vel facere. Iure quidem autem sed aliquid aliquam velit
+                            sit repellat, quisquam ducimus qui natus eius quibusdam totam ut saepe!</p>
+
+                    </div>
+                    <div id="item-1-1">
+                        <h5>Item 1-1</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis non suscipit.
+                            Blanditiis veniam iusto accusantium modi eligendi voluptas commodi, unde quas quidem? Ipsum
+                            vero incidunt veniam eos aperiam accusamus non ad saepe sapiente quaerat iste eveniet a
+                            corrupti, deleniti quasi minima. Reiciendis harum illum id voluptatem eligendi pariatur nisi
+                            eaque, unde asperiores aspernatur cum? Assumenda, magni exercitationem. Quasi, ex. Eius
+                            praesentium qui iste hic autem deserunt, suscipit beatae. Cupiditate consequatur beatae
+                            reiciendis ullam magnam atque vitae aspernatur eligendi inventore et? Quia possimus dolore
+                            eaque ullam iusto quasi sint, cupiditate illo aliquid fugit expedita aperiam aut laborum
+                            maiores eum laboriosam recusandae non ut quod. Tenetur, eligendi nulla aliquam sed porro ut
+                            quia dolore accusantium quos nam molestias voluptate explicabo voluptatem est dignissimos
+                            accusamus excepturi voluptatibus in possimus at facere. Veniam animi labore dolorum quasi
+                            molestiae minus ratione quibusdam quae magnam dolor? Ex similique numquam distinctio sint
+                            perferendis, sit temporibus assumenda! Saepe, perspiciatis commodi exercitationem unde
+                            asperiores necessitatibus provident veritatis cumque laboriosam, autem suscipit dolor facere
+                            illo quos maxime nobis. Ea quidem praesentium assumenda nisi architecto culpa facere nam
+                            iusto placeat voluptatum? Eveniet voluptate aperiam ratione distinctio, eaque at! Et
+                            perspiciatis quam itaque dolor sint aliquam officia quaerat numquam quod excepturi.</p>
+                    </div>
+                    <div id="item-1-2">
+                        <h5>Item 1-2</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis non suscipit.
+                            Blanditiis veniam iusto accusantium modi eligendi voluptas commodi, unde quas quidem? Ipsum
+                            vero incidunt veniam eos aperiam accusamus non ad saepe sapiente quaerat iste eveniet a
+                            corrupti, deleniti quasi minima. Reiciendis harum illum id voluptatem eligendi pariatur nisi
+                            eaque, unde asperiores aspernatur cum? Assumenda, magni exercitationem. Quasi, ex. Eius
+                            praesentium qui iste hic autem deserunt, suscipit beatae. Cupiditate consequatur beatae
+                            reiciendis ullam magnam atque vitae aspernatur eligendi inventore et? Quia possimus dolore
+                            eaque ullam iusto quasi sint, cupiditate illo aliquid fugit expedita aperiam aut laborum
+                            maiores eum laboriosam recusandae non ut quod. Tenetur, eligendi nulla aliquam sed porro ut
+                            quia dolore accusantium quos nam molestias voluptate explicabo voluptatem est dignissimos
+                            accusamus excepturi voluptatibus in possimus at facere. Veniam animi labore dolorum quasi
+                            molestiae minus ratione quibusdam quae magnam dolor? Ex similique numquam distinctio sint
+                            perferendis, sit temporibus assumenda! Saepe, perspiciatis commodi exercitationem unde
+                            asperiores necessitatibus provident veritatis cumque laboriosam, autem suscipit dolor facere
+                            illo quos maxime nobis. Ea quidem praesentium assumenda nisi architecto culpa facere nam
+                            iusto placeat voluptatum? Eveniet voluptate aperiam ratione distinctio, eaque at! Et
+                            perspiciatis quam itaque dolor sint aliquam officia quaerat numquam quod excepturi.</p>
+                    </div>
+                    <div id="item-2">
+                        <h4>Item 2</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis non suscipit.
+                            Blanditiis veniam iusto accusantium modi eligendi voluptas commodi, unde quas quidem? Ipsum
+                            vero incidunt veniam eos aperiam accusamus non ad saepe sapiente quaerat iste eveniet a
+                            corrupti, deleniti quasi minima. Reiciendis harum illum id voluptatem eligendi pariatur nisi
+                            eaque, unde asperiores aspernatur cum? Assumenda, magni exercitationem. Quasi, ex. Eius
+                            praesentium qui iste hic autem deserunt, suscipit beatae. Cupiditate consequatur beatae
+                            reiciendis ullam magnam atque vitae aspernatur eligendi inventore et? Quia possimus dolore
+                            eaque ullam iusto quasi sint, cupiditate illo aliquid fugit expedita aperiam aut laborum
+                            maiores eum laboriosam recusandae non ut quod. Tenetur, eligendi nulla aliquam sed porro ut
+                            quia dolore accusantium quos nam molestias voluptate explicabo voluptatem est dignissimos
+                            accusamus excepturi voluptatibus in possimus at facere. Veniam animi labore dolorum quasi
+                            molestiae minus ratione quibusdam quae magnam dolor? Ex similique numquam distinctio sint
+                            perferendis, sit temporibus assumenda! Saepe, perspiciatis commodi exercitationem unde
+                            asperiores necessitatibus provident veritatis cumque laboriosam, autem suscipit dolor facere
+                            illo quos maxime nobis. Ea quidem praesentium assumenda nisi architecto culpa facere nam
+                            iusto placeat voluptatum? Eveniet voluptate aperiam ratione distinctio, eaque at! Et
+                            perspiciatis quam itaque dolor sint aliquam officia quaerat numquam quod excepturi.</p>
+                    </div>
+                    <div id="item-3">
+                        <h4>Item 3</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis non suscipit.
+                            Blanditiis veniam iusto accusantium modi eligendi voluptas commodi, unde quas quidem? Ipsum
+                            vero incidunt veniam eos aperiam accusamus non ad saepe sapiente quaerat iste eveniet a
+                            corrupti, deleniti quasi minima. Reiciendis harum illum id voluptatem eligendi pariatur nisi
+                            eaque, unde asperiores aspernatur cum? Assumenda, magni exercitationem. Quasi, ex. Eius
+                            praesentium qui iste hic autem deserunt, suscipit beatae. Cupiditate consequatur beatae
+                            reiciendis ullam magnam atque vitae aspernatur eligendi inventore et? Quia possimus dolore
+                            eaque ullam iusto quasi sint, cupiditate illo aliquid fugit expedita aperiam aut laborum
+                            maiores eum laboriosam recusandae non ut quod. Tenetur, eligendi nulla aliquam sed porro ut
+                            quia dolore accusantium quos nam molestias voluptate explicabo voluptatem est dignissimos
+                            accusamus excepturi voluptatibus in possimus at facere. Veniam animi labore dolorum quasi
+                            molestiae minus ratione quibusdam quae magnam dolor? Ex similique numquam distinctio sint
+                            perferendis, sit temporibus assumenda! Saepe, perspiciatis commodi exercitationem unde
+                            asperiores necessitatibus provident veritatis cumque laboriosam, autem suscipit dolor facere
+                            illo quos maxime nobis. Ea quidem praesentium assumenda nisi architecto culpa facere nam
+                            iusto placeat voluptatum? Eveniet voluptate aperiam ratione distinctio, eaque at! Et
+                            perspiciatis quam itaque dolor sint aliquam officia quaerat numquam quod excepturi.</p>
+                    </div>
+                    <div id="item-3-1">
+                        <h5>Item 3-1</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis non suscipit.
+                            Blanditiis veniam iusto accusantium modi eligendi voluptas commodi, unde quas quidem? Ipsum
+                            vero incidunt veniam eos aperiam accusamus non ad saepe sapiente quaerat iste eveniet a
+                            corrupti, deleniti quasi minima. Reiciendis harum illum id voluptatem eligendi pariatur nisi
+                            eaque, unde asperiores aspernatur cum? Assumenda, magni exercitationem. Quasi, ex. Eius
+                            praesentium qui iste hic autem deserunt, suscipit beatae. Cupiditate consequatur beatae
+                            reiciendis ullam magnam atque vitae aspernatur eligendi inventore et? Quia possimus dolore
+                            eaque ullam iusto quasi sint, cupiditate illo aliquid fugit expedita aperiam aut laborum
+                            maiores eum laboriosam recusandae non ut quod. Tenetur, eligendi nulla aliquam sed porro ut
+                            quia dolore accusantium quos nam molestias voluptate explicabo voluptatem est dignissimos
+                            accusamus excepturi voluptatibus in possimus at facere. Veniam animi labore dolorum quasi
+                            molestiae minus ratione quibusdam quae magnam dolor? Ex similique numquam distinctio sint
+                            perferendis, sit temporibus assumenda! Saepe, perspiciatis commodi exercitationem unde
+                            asperiores necessitatibus provident veritatis cumque laboriosam, autem suscipit dolor facere
+                            illo quos maxime nobis. Ea quidem praesentium assumenda nisi architecto culpa facere nam
+                            iusto placeat voluptatum? Eveniet voluptate aperiam ratione distinctio, eaque at! Et
+                            perspiciatis quam itaque dolor sint aliquam officia quaerat numquam quod excepturi.</p>
+                    </div>
+                    <div id="item-3-2">
+                        <h5>Item 3-2</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit blanditiis non suscipit.
+                            Blanditiis veniam iusto accusantium modi eligendi voluptas commodi, unde quas quidem? Ipsum
+                            vero incidunt veniam eos aperiam accusamus non ad saepe sapiente quaerat iste eveniet a
+                            corrupti, deleniti quasi minima. Reiciendis harum illum id voluptatem eligendi pariatur nisi
+                            eaque, unde asperiores aspernatur cum? Assumenda, magni exercitationem. Quasi, ex. Eius
+                            praesentium qui iste hic autem deserunt, suscipit beatae. Cupiditate consequatur beatae
+                            reiciendis ullam magnam atque vitae aspernatur eligendi inventore et? Quia possimus dolore
+                            eaque ullam iusto quasi sint, cupiditate illo aliquid fugit expedita aperiam aut laborum
+                            maiores eum laboriosam recusandae non ut quod. Tenetur, eligendi nulla aliquam sed porro ut
+                            quia dolore accusantium quos nam molestias voluptate explicabo voluptatem est dignissimos
+                            accusamus excepturi voluptatibus in possimus at facere. Veniam animi labore dolorum quasi
+                            molestiae minus ratione quibusdam quae magnam dolor? Ex similique numquam distinctio sint
+                            perferendis, sit temporibus assumenda! Saepe, perspiciatis commodi exercitationem unde
+                            asperiores necessitatibus provident veritatis cumque laboriosam, autem suscipit dolor facere
+                            illo quos maxime nobis. Ea quidem praesentium assumenda nisi architecto culpa facere nam
+                            iusto placeat voluptatum? Eveniet voluptate aperiam ratione distinctio, eaque at! Et
+                            perspiciatis quam itaque dolor sint aliquam officia quaerat numquam quod excepturi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Ajout d'une card  -->
+    <div class="card_container">
+        <div class="card" style="width: 18rem;">
+            <img src="./images/bugatti.jpeg" class="card-img-top" alt="...">
+            <div class="card-body  ">
+                <h5 class="card-title text-center"> Bugatti Veyron</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <div class="text-center">
+                    <a href="#" class="btn btn-primary ">Aller voir</a>
+                </div>
+            </div>
+        </div>
+        <!-- Ajout d'une card  -->
+        <div class="card" style="width: 18rem;">
+            <img src="./images/bugatti.jpeg" class="card-img-top" alt="...">
+            <div class="card-body  ">
+                <h5 class="card-title text-center"> Bugatti Veyron</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <div class="text-center">
+                    <a href="#" class="btn btn-primary ">Aller voir</a>
+                </div>
+            </div>
+        </div>
+        <!-- Ajout d'une card  -->
+        <div class="card" style="width: 18rem;">
+            <img src="./images/bugatti.jpeg" class="card-img-top" alt="...">
+            <div class="card-body  ">
+                <h5 class="card-title text-center"> Bugatti Veyron</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up the bulk of the
+                    card's
+                    content.</p>
+                <div class="text-center">
+                    <a href="#" class="btn btn-primary ">Aller voir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- responsive image -->
+    <img src="./images/helico.jpeg" class="img-fluid float-end" alt="...">
+
+
+
+    <!-- Ajout d'une modale -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./images/bugatti.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body  ">
+                            <h5 class="card-title text-center"> Bugatti Veyron</h5>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the
+                                card's
+                                content.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary ">Aller voir</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ajout scrollable modal -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <!-- Scrollable modal -->
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus quam, ab suscipit
+                        accusamus
+                        ratione, nemo iusto fuga quas culpa eos vitae pariatur aspernatur delectus labore corporis. Eum
+                        deserunt harum, at libero, expedita nam cumque ratione, alias corrupti maiores excepturi atque
+                        provident qui veritatis? Quas magnam quos libero consectetur vitae fugiat, explicabo mollitia
+                        placeat voluptates maiores! Optio nam sapiente fugiat modi, ducimus esse aliquam neque
+                        dignissimos
+                        consequuntur illo quas accusamus odit eius eaque incidunt nemo? Totam deleniti sunt praesentium
+                        eligendi debitis dicta. Ad impedit ratione magni nostrum error possimus delectus in dicta
+                        quisquam,
+                        explicabo excepturi vel at illum corrupti illo non deserunt eaque saepe consectetur corporis
+                        laudantium consequatur. Nulla reiciendis praesentium numquam quas minima ipsa nesciunt, est
+                        aliquid
+                        perspiciatis officiis, quia illo saepe facere? Ex, dolorem et similique aut culpa deleniti
+                        molestiae
+                        eum quibusdam expedita possimus praesentium voluptatum, maiores quasi perferendis mollitia,
+                        fugit
+                        cum voluptates dicta. Hic, expedita? Ex atque natus iusto consequatur neque odio explicabo quam
+                        repellendus, quibusdam illo architecto nulla exercitationem debitis eum et, esse odit asperiores
+                        iste! Distinctio natus, repudiandae nobis saepe nostrum excepturi ex necessitatibus enim
+                        laudantium
+                        ratione dignissimos nihil corporis explicabo, exercitationem illum ullam, quas dolor sit nisi
+                        quibusdam voluptatem facilis. Magnam quam ut nobis totam cum est debitis unde consequuntur
+                        delectus?
+                        Magni quo natus, enim aliquid vel sed commodi esse doloribus nesciunt deleniti dicta eligendi
+                        sit
+                        sint dignissimos est itaque neque quam aspernatur repellat a sunt expedita! Enim doloremque
+                        fugit et
+                        libero adipisci culpa eligendi deleniti natus, nisi beatae obcaecati dicta doloribus suscipit
+                        laborum voluptatibus, autem magni possimus amet maxime? Ipsum cum praesentium alias rerum esse
+                        nostrum in deserunt asperiores dolores eveniet impedit molestiae quam sequi et sit odio a enim
+                        facilis molestias, error earum quo ducimus. Perspiciatis nobis rem dignissimos temporibus
+                        doloribus
+                        vero cupiditate nam, earum, animi dolorem quod molestiae quasi ea ratione quis esse cumque sit!
+                        Ratione quas laudantium aut neque nulla, earum dolor mollitia molestias corrupti porro
+                        voluptatem,
+                        est vitae dolore incidunt blanditiis? Ut repudiandae doloremque porro nisi reprehenderit
+                        repellendus
+                        a. Sint quam consequatur sunt sed! Reprehenderit neque sint tenetur debitis atque animi labore
+                        laudantium similique, tempora voluptatum maxime cumque! Illo mollitia delectus voluptates vitae
+                        rerum autem, corporis qui dolores quo esse, pariatur, praesentium unde voluptatum sint? Magni
+                        numquam odit vitae quos assumenda quod perspiciatis quam? Repellat perferendis, explicabo, animi
+                        sunt cum atque pariatur cumque praesentium deserunt quis consequuntur repellendus mollitia eum
+                        reprehenderit modi itaque quasi facere laudantium dolore possimus. Earum, pariatur!
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ajout d'un carrousel  -->
+    <div class="container box">
+        <div class="row">
+            <div class="col-6">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/image1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/image2.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/image1.jpeg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.js"></script>
+</body>
+
+</html>

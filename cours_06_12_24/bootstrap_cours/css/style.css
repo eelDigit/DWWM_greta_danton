@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+.my_button {
+    background-color: red;
+}
+.mon_container {
+    margin-top: 50px;
+    background-color: teal;
+
+    margin-bottom: 50px;
+}
+/* div {
+    border: 1px solid black;
+} */
+ .box {
+    padding: 10px;
+ }

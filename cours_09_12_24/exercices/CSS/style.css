@@ -1,0 +1,16 @@
+/* body{
+    padding: 50px;
+} */
+
+h1 {
+    text-align: center;
+    color: blue;
+}
+ [class*="col"] {
+    border: 2px solid white;
+    background-color: teal;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    border-radius: 10px;
+ }
