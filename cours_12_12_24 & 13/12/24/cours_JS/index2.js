@@ -97,3 +97,17 @@ l'une des valeurs suivantes : "ensoleillé", "pluvieux", "neigeux", ou autre.
 // "Mettez un manteau, il neige." si weather est "neigeux".
 // "Je ne connais pas ce type de météo." pour tout autre valeur.
 */
+
+ let weather = "ensoleillé" ;
+ if (weather === "ensoleillé") {
+    console.log("Il fait beau aujourd'hui, profitez du soleil !");
+
+ }else if (weather === "pluvieux")
+ {
+console.log("Prenez un parapluie, il pleut.");
+ }else if (weather === "neigeux") {
+    console.log("Mettez un manteau, il neige.");
+ }else {
+    console.log("je ne connait pas ce type de météo");
+ }
+
