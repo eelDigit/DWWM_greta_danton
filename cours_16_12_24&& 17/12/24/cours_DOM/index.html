@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Cours DOM</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>Accueil</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1> Cours DOM</h1>
+        <div class="question_container">
+            <h2>Quel est la capitale de la France ? </h2>
+            <button id="btn_1"> Paris</button>
+            <button id="btn_2"> Lyon</button>
+
+            <p class="bonne_reponse">La Bonne réponse est Paris</p>
+            <p class="mauvaise_reponse">Mauvaise réponse</p>
+        </div>
+
+        <!-- mouse-envent _________________________________-->
+        <!-- <div > -->
+        <img class="mousemove" src="./spiderman.webp" alt="image spiderman">
+        <!-- cration d'une bulle -->
+        <!-- </div> -->
+
+
+        <!-- keypress event ______________________________ -->
+        <div class="keypress">
+            <h2> Vous avez appuyer sur la touche : <span id="key"></span> </h2>
+
+            <!-- on inject dans le span  la touche appuyé -->
+        </div>
+
+        <!-- form event ______________________________ -->
+        <form action="">
+            <input type="text" name="" id="inputName" placeholder="Nom">
+            <input type="text" name="" id="inputPrenom" placeholder="Prenom">
+            <select name="" id="">
+
+                <option value="javascript">Javascript</option>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+            </select>
+            <div class="checkbox_container">
+                <input type="checkbox" name="" id="cgv">
+                <label for="cgv"> Accepter les CGV</label>
+            </div>
+            <input type="submit" value="Envoyer">
+        </form>
+
+        <div class="form_data"></div>
+
+
+
+
+
+    </main>
+    <script src="./index.js"></script>
+</body>
+
+</html>

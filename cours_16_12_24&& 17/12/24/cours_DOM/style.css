@@ -1,0 +1,118 @@
+body {
+    margin: 20px;
+    height: 200vh;
+}
+
+h1 {
+    text-align: center;
+    color: tomato;
+}
+p {
+    display: none;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+button:hover {
+    background-color: rgb(49, 162, 200);
+}
+.question_container {
+    margin-bottom: 50px;
+}
+.show_response {
+
+    /* font-size: 3em; */
+    font-weight: bold;
+    display: block;
+    color: green;
+    /* transform: rotate(20deg); */
+}
+/* Ajout css mouse-move ____________________ */
+
+.mousemove{
+    /* background-image: url("./spiderman.webp");
+    background-repeat: no-repeat;
+    background-position: cover; */
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.1s ease;
+    z-index: -1;
+    
+}
+
+/* .mousemove1 {
+    background-image: url("./spiderman.webp");
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+
+}
+
+.mousemove1 {
+    background-image: url("./spiderman.webp");
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transition: 0.4s ease;
+
+} */
+
+/* css pour formulaire ________ */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form>input, select {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 200px;
+    height: 30px;
+}
+.form_data {
+    height: 200px;
+    width: 200px;
+    border: 1px solid teal;
+    border-radius: 5px;
+}
+.checkbox_container {
+    display: flex;
+}
+
+/* css bar de nav________________________________ */
+
+nav {
+    background-color: blue;
+    color: white;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    top: -100px;
+    position: fixed;
+    transition : ease 0.5s
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+li {
+    list-style-type: none;
+    text-align: center;
+
+}
