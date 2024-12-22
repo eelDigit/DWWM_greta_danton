@@ -33,8 +33,8 @@ const circle = document.querySelector(".mousemove");
 window.addEventListener("mousemove", (e)=> {
 
 //     //e correspont a event (pour les evenements)
-// console.log(" X: ",e.pageX);
-// console.log("Y: ",e.pageY);
+console.log(" X: ",e.pageX);
+console.log("Y: ",e.pageY);
 
 circle.style.left = e.pageX + "px";
 circle.style.top = e.pageY + "px";
@@ -157,3 +157,28 @@ if(window.scrollY > 120) {
 }
 
 })
+// exercice DOM___________________________________________
+// N° 1
+
+/**
+ * 
+ * Instructions :
+Crée l'interface :
+
+Trois boutons représentant des couleurs : Bleu, Rouge, et Vert.
+Un bouton supplémentaire intitulé "Désactiver les choix".
+Un paragraphe vide qui affichera le message de réponse.
+Règles du jeu :
+
+Si l'utilisateur clique sur le bouton Vert, un message "Bonne réponse ! s'affiche en vert.
+Si l'utilisateur clique sur Bleu ou Rouge, un message "Mauvaise réponse !"" s'affiche en rouge.
+
+Lorsque l'utilisateur clique sur le bouton "Désactiver les choix",
+tous les boutons de choix doivent être désactivés, ainsi que le bouton lui-même.
+Un message "Les choix sont désactivés" s'affiche en orange.
+Exemple d'affichage attendu :
+
+Trois boutons : Bleu, Rouge, et Vert.
+Un bouton "Désactiver les choix".
+Un message dynamique qui change en fonction des actions de l'utilisateur.
+ */

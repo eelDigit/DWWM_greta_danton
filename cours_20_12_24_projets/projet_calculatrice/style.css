@@ -1,0 +1,46 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+.app {
+    width: 300px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px repeat(5, 30px);
+    grid-template-areas: 
+        "res res res res" /*ici le resultat*/
+        "7 8 9 reset"
+        "4 5 6 reset"
+        "1 2 3 reset"
+        "0 dot cplus minus"
+        "equal equal times div"
+    ;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+h2 {
+    text-align: right;
+    margin-right: 7px;
+    font-style: 2rem;
+    grid-area: res;
+}
+button {
+    background: teal;
+    color: white;
+    border:  1px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+button:hover {
+    background:  rgb(30, 171, 171);
+}
+
+#equal {
+    grid-area:  equal;
+}
+#clear {
+    grid-area: reset;
+}
