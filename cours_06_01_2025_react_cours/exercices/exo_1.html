@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exo 1</title>
+
+    <!-- links react______________ -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- babel : compilation du JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <div id="root"></div>
+
+
+    <script type="text/babel">
+
+        class Consigne extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <p> En vous basant sur l'exemple TitleComponent, et Consigne,
+                            créez le composant PrimaryButton qui contiendra un bouton,
+                            avec un text de votre choix. </p>
+
+                        <p> Depuis la classe Props , appeler ce composant en vous inspirant des exemples . </p>
+                        <p> Créer un nouveau composant TextField qui contiendra un input de type texte et un label de votre choix </p>
+                        <p> Génerer ce nouveau composant TextField depuis la classe Props deux fois </p>
+                    </div>
+                )
+            }
+        }
+
+
+        class TitleComponent extends React.Component {
+            render() {
+                return (
+                    <h1> Ceci est un titre  </h1>
+                )
+            }
+        }
+
+
+        // creation de composants _________________
+        class PrimaryButton extends React.Component {
+            render() {
+                return (
+                    <button> Envoyer </button>
+                )
+            }
+        } class TextField extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <label htmlFor="test"> nom : </label>
+                        <input type="text" name="" id="test" />
+                    </div>
+
+                )
+            }
+        }
+
+
+        // ___________________________________________
+
+        class Props extends React.Component {
+            render() {
+                return (
+                    <div>
+                        <TitleComponent />
+                        <Consigne />
+                        <PrimaryButton />
+                        <TextField />
+                        <TextField />
+                    </div>
+                )
+            }
+        }
+
+
+
+        //  rendu dans le DOM
+        ReactDOM.render(
+            <Props />,
+
+            document.getElementById('root')
+        )
+
+    </script>
+
+
+
+</body>
+
+</html>
