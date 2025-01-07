@@ -31,15 +31,13 @@ import AgePersonne from './components/AgePersonne';
 // }
 
 
-const App =  () => {
+const App =  (props) => {
   return(
     <>
              <MonComponent />
-             <Personne  nom= "joe" age = "31"  sex= "homme"  />
-             <Personne  nom= "Jacques" age = "25"    sex= "homme" />
-             <Personne  nom= "William" age = "15"    sex= "homme"  />
-            
-            {/* <AgePersonne /> */}
+             <Personne  nom= "joe" age= "31"  sex= "homme"  />
+             <Personne  nom= "Jacques" age= "25"    sex= "homme" />
+             <Personne  nom= "William" age= "15"    sex= "homme"  />
             </>
   )
 }

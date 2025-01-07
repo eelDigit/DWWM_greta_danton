@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-
+import AgePersonne from "./AgePersonne"
 // class Personne extends Component {
 //     render() {
 //       return (
@@ -22,31 +22,36 @@ import React, {Component} from "react";
 //  </>
 //   )
 // }
-// const Personne = (props) => {
-//   return (
-//     <>
-//     <h1> {props.nom} </h1> 
-//     <p>Age : {props.age} </p>
-//     <p>Sex : {props.sex} </p>
-//  </>
-//   )
-// }
-
-class Personne extends Component {
-
-// constructor(props) {
-//   super()
-// }
-render() {
+const Personne = (props) => {
   return (
-          <>
-          <h1> {this.props.nom} </h1> 
-          <p>Age : {this.props.age} </p>
-          <p>Sex : {this.props.sex} </p>
-      </>
+    <>
+    <h1> {props.nom} </h1> 
+    <p>Age : {props.age} </p>
+    <p>Sex : {props.sex} </p>
+
+     <AgePersonne />
+
+ </>
   )
 }
 
-}
+// class Personne extends Component {
+
+// // constructor(props) {
+// //   super()
+// // }
+// render() {
+//   return (
+//           <>
+//           <h1> {this.props.nom} </h1> 
+//           {/* <p>Age : {this.props.age} </p> */}
+//           <AgePersonne />
+
+//           <p>Sex : {this.props.sex} </p>
+//       </>
+//   )
+// }
+
+// }
 
   export default Personne;
