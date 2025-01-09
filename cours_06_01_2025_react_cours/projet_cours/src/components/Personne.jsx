@@ -29,7 +29,7 @@ const Personne = (props) => {
     <p>Age : {props.age} </p>
     <p>Sex : {props.sex} </p>
 
-     <AgePersonne />
+     {/* <AgePersonne /> */}
 
  </>
   )

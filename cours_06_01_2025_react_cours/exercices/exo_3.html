@@ -64,15 +64,75 @@
             }
         }
 
+        //   creation composant PanierLegumes_____________________
+
+        class Legume extends React.Component {
+            render() {
+                return (
+                    <p> {this.props.article.name} -  {this.props.article.prix} euros </p>
+                )
+            }
+        }
+        class PanierLegumes extends React.Component {
+            render() {
+                const legumes = this.props.listeLegumes;
+                return (
+                    <div>
+                        {
+                            legumes.map((legume, i) => (
+                                <Legume key={i} article={legume} />
+                            ))
+                        }
+                    </div>
+                )
+            }
+
+        }
+
+        //   creation composant Eleves  _____________________
+        class Eleve extends React.Component {
+            render() {
+                return (
+                    <p>
+                        {this.props.eleve.name}  / age : {this.props.eleve.age}
+                    </p>
+                )
+            }
+        }
+
+        class Eleves extends React.Component {
+
+
+            render() {
+                const eleves = this.props.listeEleves;
+                return (
+                    <div>
+                        {
+                            eleves.map((eleve, i) => (
+                                <Eleve key={i} eleve={eleve} />
+                            ))
+                        }
+                    </div>
+                )
+            }
+        }
+
+
+
+
         // Création de composant en créant des classes
         class Hello extends React.Component {
             render() {
                 const legumes = listeLegumes();
-                const elèves = listeEleves();
+                const eleves = listeEleves();
 
                 return (
                     <div className="heading">
                         <TitleComponent />
+
+                        <PanierLegumes listeLegumes={legumes} />
+                        <Eleves listeEleves={eleves} />
+
                         <p>{this.props.subtitle}</p>
                         <Consigne />
                     </div>

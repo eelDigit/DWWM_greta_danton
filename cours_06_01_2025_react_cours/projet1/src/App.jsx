@@ -1,4 +1,6 @@
-import Title from "./Title";
+import Counter from "./components/Counter";
+import Title from "./components/Title";
+import Exo1 from "./exercices/Exo1";
 
 
 const showTitle = true;
@@ -31,24 +33,18 @@ const props = {
 function App() {
   return (
     <>
+          {showTitle ?  <Title /> : <p> ne s'affiche pas</p>}
+            {/* l'attribut style est un objet ==> donc 2 accolades */}
+            {/* <h2  style= {{ color: "red" , backgroundColor: "green"}}   >  <Title /> </h2> */}
+            <SubTitle color="red" hidden = {false}>  Pour commencer: </SubTitle>
+           <ul>
+              { todos.map(todo => 
+              <li key= {todo}>   {todo}   </li>
+              ) }
+            </ul>
 
-      {showTitle ?  <Title /> : <p> ne s'affiche pas</p>}
-
-        {/* l'attribut style est un objet ==> donc 2 accolades */}
-        {/* <h2  style= {{ color: "red" , backgroundColor: "green"}}   >  <Title /> </h2> */}
-    
-        <SubTitle color="red" hidden = {false}>  Pour commencer: </SubTitle>
-
-
-     <ul>
-          { todos.map(todo => 
-          <li key= {todo}>   {todo}   </li>
-           ) }
-     </ul>
-
-    
-    
-    
+            <Counter />
+            <Exo1 />
     </>
     
   );
